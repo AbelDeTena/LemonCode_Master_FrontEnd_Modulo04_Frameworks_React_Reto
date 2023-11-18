@@ -1,7 +1,7 @@
 export type OrderDetail = {
     state: boolean;
     description: string;
-    import: number;
+    amount: number;
   };
 
 export type Order = {

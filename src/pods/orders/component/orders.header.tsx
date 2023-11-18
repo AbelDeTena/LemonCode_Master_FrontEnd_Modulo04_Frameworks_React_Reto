@@ -1,9 +1,18 @@
-export const Header = () => {
+type Props = {
+  number: number;
+  supplier: string;
+  date: string;
+};
+
+
+export const Header = (props:Props) => {
+
+
   return (
     <>
       <div>
         <label htmlFor="number">Number</label>
-        <input type="text" id="number" value={8} />
+        <input type="text" id="number" value={props.number} />
         <label
           htmlFor="
 suppliers"
@@ -14,11 +23,11 @@ suppliers"
           type="text"
           id="n
 suppliers"
-          value={"Mercadona"}
+          value={props.supplier}
         />
       </div>
       <label htmlFor="date">Date</label>
-      <input type="date" id="date" value={"17/12/2023"} />
+      <input type="date" id="date" value={props.date} />
     </>
   );
 };

@@ -1,22 +1,43 @@
 import {Order} from "./model"
 
-export const Orders:Order[]= [
+export const MockOrders:Order[]= [
     {
         number: 1,
         supplier: "Mercadona",
-        date: "18/12/2022",
+        date: "2023-12-10",
         details: [
             {state: true,
                 description: "Palomitas sal",
-                import: 4
+                amount: 4
+            },
+            {state: true,
+                description: "Palomitas mantequilla",
+                amount: 4
+            }, 
+            {state: true,
+                description: "colacola",
+                amount: 2
+            }
+
+        ]        
+
+    },
+    {
+        number: 2,
+        supplier: "Carrefour",
+        date: "2023-12-12",
+        details: [
+            {state: true,
+                description: "Palomitas sal",
+                amount: 3.5
             },
             {state: false,
                 description: "Palomitas mantequilla",
-                import: 4
+                amount: 3.75
             }, 
-            {state: false,
+            {state: true,
                 description: "colacola",
-                import: 2
+                amount: 1.80
             }
 
         ]        
